@@ -7,8 +7,6 @@
     {
         private By addToCart = By.CssSelector("#desktop_qualifiedBuyBox #add-to-cart-button");
 
-        private By accessoryPane = By.CssSelector("#attach-accessory-pane");
-
         private By priceOfProduct = By.CssSelector("#centerCol .a-price-whole");
 
         private By productName = By.CssSelector("#titleSection #productTitle");

@@ -26,6 +26,8 @@
             accessoryPane.WaitUntilElementIsDisplayed(byElement, 3);
             IWebElement element = accessoryPane.GetWebElement(byElement);
             accessoryPane.ClickElement(element);
+            accessoryPane.WaitUntilElementIsInvisible(accessoryPane.GetWebElementByFieldName("Pane"));
+            accessoryPane.WaitUntilPageIsLoaded();
         }
 
     }

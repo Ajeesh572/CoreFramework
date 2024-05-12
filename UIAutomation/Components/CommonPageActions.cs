@@ -30,6 +30,15 @@
         }
 
         /// <summary>
+        /// Waits until a web element is Invisible.
+        /// </summary>
+        /// <param name="element">Is the by element that method will wait for Invisible</param>
+        public void WaitUntilElementIsInvisible(By element)
+        {
+            WebDriverManager.Instance.GetWebDriverWait.Until(ExpectedConditions.InvisibilityOfElementLocated(element));
+        }
+
+        /// <summary>
         /// Waits until a web element is displayed.
         /// </summary>
         /// <param name="byElement">Is the element that method will wait</param>

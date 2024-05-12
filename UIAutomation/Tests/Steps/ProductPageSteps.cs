@@ -24,7 +24,6 @@
             productPage.WaitUntilElementIsDisplayed(element);
             productPage.ClickElement(productPage.GetWebElement(element));
             productPage.WaitUntilPageIsLoaded();
-
         }
 
         [When(@"I Wait for Accessory Pane on Products page")]
